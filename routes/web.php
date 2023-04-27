@@ -39,6 +39,7 @@ Route::middleware(['Admin'])->group(function () {
     Route::get('/user', [UserController::class, 'getall'])->name('user')->middleware('Admin');
     Route::get('/backend', [MairieController::class, 'crud'])->name('backend');
     Route::get('/backend2', [MairieController::class, 'crud2'])->name('backend2');
+    Route::get('/dashboard', [MairieController::class, 'dashboard'])->name('dashboard');
     Route::get('/showdelete/{id}', [UserController::class, 'showdel']);
     Route::delete('/user/{id}', [UserController::class, 'delete']);
     Route::get('/restore', [UserController::class, 'showrestore']);

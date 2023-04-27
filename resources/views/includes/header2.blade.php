@@ -1,4 +1,4 @@
-  <nav class="mt-2 bg-red-400 rounded-lg shadow">
+  <nav class="mt-2 bg-black rounded-lg shadow">
       <div class="flex flex-col mx-4 md:flex-row md:justify-between md:items-center">
           <div class="flex items-center justify-between">
 
@@ -35,15 +35,15 @@
 
           <div class="items-center md:flex">
               <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
-                  <a class="my-1 text-sm leading-5 text-gray-700 transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('welcome') }}">Home</a>
-                  <a class="my-1 text-sm leading-5 text-gray-700 transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
                       href="">Lien</a>
-                  <a class="my-1 text-sm leading-5 text-gray-700 transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('user') }}">utilisateurs</a>
-                @auth  <a class="my-1 text-sm leading-5 text-gray-700 transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                @auth  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('backend') }}">Films</a> @endauth
-                 @auth  <a class="my-1 text-sm leading-5 text-gray-700 transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                 @auth  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('signout') }}">Deconnexion</a>@endauth
                       
               </div>

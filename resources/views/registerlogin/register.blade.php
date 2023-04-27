@@ -39,9 +39,9 @@
     <img src="storage/img/logo.png" alt="">
       
   </div>
-  <p class="mt-2 text-sm font-semibold text-center text-gray-600">
+  <p class="mt-2 text-sm font-semibold text-center text-blue-800">
     Tu as deja un compte?
-    <a href="{{route('login') }}" class="font-semibold text-red-600 hover:text-red-500">
+    <a href="{{route('login') }}" class="font-semibold text-green-600 hover:text-red-500">
     Se connecter
     </a>
   </p>
@@ -67,7 +67,7 @@
   </div>
 
   <div>
-    <button id="signin" type="submit" class="flex items-center justify-center w-48 px-4 py-2 mx-auto text-sm font-semibold text-white bg-red-500 border border-transparent rounded-md  hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-50" aria-required="true">
+    <button id="signin" type="submit" class="flex items-center justify-center w-48 px-4 py-2 mx-auto text-sm font-semibold text-white bg-black border border-transparent rounded-md  hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-50" aria-required="true">
 
       S'inscrire
     </button>

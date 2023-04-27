@@ -1,3 +1,4 @@
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 <div x-data="{ modelOpen: false }">
     <button @click="modelOpen =!modelOpen">
         <i class="p-3 fa-solid fa-pen-to-square hover:text-blue-700"></i>

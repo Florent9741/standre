@@ -1,3 +1,4 @@
+@vite(['resources/css/app.css', 'resources/js/app.js'])
 <section class="mt-6 px-12 text-black bg-gray-200 rounded-lg body-font">
     <div class="container px-5 py-10 mx-auto ">
         <div class="flex flex-col w-full mb-20 text-center ">

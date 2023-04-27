@@ -59,7 +59,7 @@
 
                 <div>
                     <button id="signin" type="submit"
-                        class="relative flex justify-center w-48 px-4 py-2 m-auto text-sm font-semibold text-white bg-red-500 border border-transparent rounded-md group hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-50"
+                        class="relative flex justify-center w-48 px-4 py-2 m-auto text-sm font-semibold text-white bg-black border border-transparent rounded-md group hover:bg-lightblue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-50"
                         aria-required="true">
 
                         Se connecter

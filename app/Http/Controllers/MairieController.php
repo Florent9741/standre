@@ -22,7 +22,7 @@ class MairieController extends Controller
     }
 
 
-    public function crud()
+    public function dashboard()
     {
         $nums = Nums::All();
         $nums2s = Nums2s::All();
@@ -31,6 +31,17 @@ class MairieController extends Controller
             'nums' => $nums,
             'nums2s' => $nums2s,
             
+        ]);
+    }
+
+
+    public function crud()
+    {
+        $nums = Nums::All();  
+        
+        return view('backend', [
+            'nums' => $nums,
+               
         ]);
     }
 
