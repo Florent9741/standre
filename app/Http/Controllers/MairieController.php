@@ -113,7 +113,7 @@ public function createnums2(Request $request)
        
         $nums2s->save();
        
-        return redirect()->route('backend')->with('success', 'Numéro ajouté');
+        return redirect()->route('backend2')->with('success', 'Numéro ajouté');
     }
 
 
@@ -129,7 +129,7 @@ public function createnums2(Request $request)
        
         $nums2s->save();
        
-        return redirect()->route('backend')->with('modifié', 'Numéro modifié');
+        return redirect()->route('backend2')->with('modifié', 'Numéro modifié');
 
     }
 
@@ -138,7 +138,7 @@ public function createnums2(Request $request)
     {
         $nums2s = Nums2s::where('id', '=', $id);
         $nums2s->delete();
-        return redirect()->route('backend')->with('deleted', 'Numéro supprimé');
+        return redirect()->route('backend2')->with('deleted', 'Numéro supprimé');
     }
 
 //---------------------------------------------------------------------------------------------------------------------//
