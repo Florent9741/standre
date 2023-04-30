@@ -56,7 +56,7 @@
                           
                           
                            
-                            <td class="px-4 py-3 border-2">@include('includes.update2')
+                            <td class="px-4 py-3 border-2">@include('includes.update2') 
                                 @include('includes.delete2')
                             </td>
                         </tr>

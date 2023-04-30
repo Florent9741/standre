@@ -5,6 +5,7 @@ use App\Models\Nums2s;
 use App\Models\Nums;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+use Throwable;
 
 class MairieController extends Controller
 {
