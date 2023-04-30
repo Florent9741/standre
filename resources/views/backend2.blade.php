@@ -2,6 +2,6 @@
 @extends('layouts.app')
 
 @section('main')
- @include('includes.crud2')
+ @include('includes.viewcrud2')
  
 @endsection

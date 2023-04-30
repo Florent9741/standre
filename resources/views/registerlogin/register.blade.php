@@ -35,7 +35,7 @@
 
 
 
-  <div>
+ <div class="flex justify-center">
     <img src="storage/img/logo.png" alt="">
       
   </div>

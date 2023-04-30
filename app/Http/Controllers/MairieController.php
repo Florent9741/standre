@@ -10,6 +10,7 @@ use Throwable;
 class MairieController extends Controller
 {
 
+  
     public function index(){
         return view('welcome');
     }
@@ -28,7 +29,7 @@ class MairieController extends Controller
         $nums = Nums::All();
         $nums2s = Nums2s::All();
    
-        return view('backend', [
+        return view('dashboard', [
             'nums' => $nums,
             'nums2s' => $nums2s,
             
