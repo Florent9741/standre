@@ -3,7 +3,7 @@
           <div class="flex items-center justify-between">
 
               <div class="flex items-center">
-                  <a href="/"> <img class="h-[100px] py-1 w-full pt-1 rounded-md"
+                  <a href="/"> <img class="h-[90px] py-1 w-full pt-1 rounded-md"
                           src="{{ Storage::url('./img/logo1.png') }}"></a>
                   <!-- Search input on desktop screen -->
                  
@@ -14,21 +14,23 @@
 
           <div class="items-center md:flex">
               <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
-                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('welcome') }}">Home</a>
-                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('lien')}}">Lien</a>
-                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('lienwit')}}">Lienwit</a>
-                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('backend') }}">Fixe</a>
-                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('backend2') }}">Mobile</a>
-                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('user') }}">utilisateurs</a>
-                @auth  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
+                      href="{{ route('arrivant') }}">Nouvel Arrivant</a>
+                @auth  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('dashboard') }}">Dashboard</a> @endauth
-                 @auth  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-red-700 hover:underline md:mx-4 md:my-0"
+                 @auth  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('signout') }}">Deconnexion</a>@endauth
                       
               </div>

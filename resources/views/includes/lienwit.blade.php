@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('main')
 
 <!-- component -->
 <!-- This is an example component -->
@@ -29,4 +29,4 @@
       
 </div>
 
-
+@endsection

@@ -17,8 +17,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MairieController::class, 'index'])->name('welcome');
 
-Route::get('lien', [MairieController::class, 'lien'])->name('lien');
+Route::get('lien', [MairieController::class, 'lien'])->name('lien');                
 Route::get('lienwit', [MairieController::class, 'lienwit'])->name('lienwit');
+Route::get('arrivant', [MairieController::class, 'arrivant'])->name('arrivant');
+Route::get('doctel', [MairieController::class, 'doctel'])->name('doctel');
+Route::get('alcatel1', [MairieController::class, 'alcatel1'])->name('alcatel1');
+Route::get('alcatel2', [MairieController::class, 'alcatel2'])->name('alcatel2');
 
 Route::get('register', [Authcontroller::class, 'register'])->name('register');
 
@@ -37,8 +41,7 @@ Route::get('signout', [Authcontroller::class, 'logout'])->name('signout');
 Route::middleware(['Admin'])->group(function () {
 
     Route::get('/user', [UserController::class, 'getall'])->name('user')->middleware('Admin');
-    Route::get('/backend', [MairieController::class, 'crud'])->name('backend');
-    Route::get('/backend2', [MairieController::class, 'crud2'])->name('backend2');
+   
     Route::get('/dashboard', [MairieController::class, 'dashboard'])->name('dashboard');
     Route::get('/showdelete/{id}', [UserController::class, 'showdel']);
     Route::delete('/user/{id}', [UserController::class, 'delete']);
@@ -47,6 +50,8 @@ Route::middleware(['Admin'])->group(function () {
 
 });
 
+Route::get('/backend', [MairieController::class, 'crud'])->name('backend');
+Route::get('/backend2', [MairieController::class, 'crud2'])->name('backend2');
 
 Route::post('/Mairie/ajouter', [MairieController::class, 'create'])->name('ajouter');
 

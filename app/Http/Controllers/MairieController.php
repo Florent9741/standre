@@ -9,10 +9,24 @@ use Throwable;
 
 class MairieController extends Controller
 {
+    public function alcatel1(){
+        return view('includes.alcatel1');
+    }
 
+    public function alcatel2(){
+        return view('includes.alcatel2');
+    }
+
+    public function doctel(){
+        return view('includes.doctel');
+    }
+
+    public function arrivant(){
+        return view('includes.arrivant');
+    }
   
     public function index(){
-        return view('welcome');
+        return view('welcome',);
     }
 
     public function lien(){
