@@ -553,6 +553,13 @@ video {
     max-width: 1536px;
   }
 }
+
+@media (min-width: 1920px) {
+
+  .container {
+    max-width: 1920px;
+  }
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -9641,6 +9648,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 1536px;
   }
 }
+
+@media (min-width: 1620px) {
+
+  .container {
+    max-width: 1620px;
+  }
+}
+
+
+
 .fixed {
   position: fixed;
 }
