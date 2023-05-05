@@ -52,6 +52,7 @@ Route::middleware(['Admin'])->group(function () {
 
 Route::get('/backend', [MairieController::class, 'crud'])->name('backend');
 Route::get('/backend2', [MairieController::class, 'crud2'])->name('backend2');
+Route::get('/crud3', [MairieController::class, 'crud3'])->name('crud3');
 
 Route::post('/Mairie/ajouter', [MairieController::class, 'create'])->name('ajouter');
 

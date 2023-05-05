@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Nums2s;
 use App\Models\Nums;
+use App\Models\Gpinter;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use Throwable;
@@ -69,6 +70,17 @@ class MairieController extends Controller
    
         return view('backend2', [
             'nums2s' => $nums2s,
+            
+        ]);
+    }
+
+    public function crud3()
+    {
+        $gpinters = Gpinter::All();
+       
+   
+        return view('includes.crud3', [
+            'gpinters' => $gpinters,
             
         ]);
     }
@@ -158,4 +170,40 @@ public function createnums2(Request $request)
 
 //---------------------------------------------------------------------------------------------------------------------//
 
+public function creategpinter(Request $request)
+    {
+//dd($request);
+          //chemin + nom image
+        $gpinters = new Gpinter();
+        
+        $gpinters->numero = $request->numero;
+        $gpinters->service = $request->service;
+      
+       
+        $gpinters->save();
+       
+        return redirect()->route('includes.crud3')->with('success', 'Numéro ajouté');
+    }
+
+
+
+    public function updategpinter(Request $request, $id)
+    {
+        $gpinters = Gpinter::find($id);
+        $gpinters->numero = $request->numero;
+        $gpinters->service = $request->service;
+       
+        $gpinters->save();
+       
+        return redirect()->route('includes.crud3')->with('modifié', 'Numéro modifié');
+
+    }
+
+
+    public function deletegpinter($id)
+    {
+        $gpinters = Gpinter::where('id', '=', $id);
+        $gpinters->delete();
+        return redirect()->route('includes.crud3')->with('deleted', 'Numéro supprimé');
+    }
 }
