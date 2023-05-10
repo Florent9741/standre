@@ -7,6 +7,32 @@
 
             <table class="object-center whitespace-no-wrap bg-gray-100 table-auto">
                 @include('includes.ajouter2')
+                <div class="flex space-x-2">
+            <form class="mt-5" method="post" action="{{ route('ascendent3') }}"
+                    enctype="multipart/form-data">
+                    @csrf
+                   
+
+                        <button type="submit"
+                                class=" w-[10%] bg-black flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm text-white rounded-md ">
+                                A-Z
+                            </button>
+
+                  
+                </form>
+                <form class="mt-5" method="post" action="{{ route('desc3') }}"
+                    enctype="multipart/form-data">
+                    @csrf
+                   
+
+                        <button type="submit"
+                                class=" w-[10%] bg-black flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm text-white rounded-md ">
+                                Z-A
+                            </button>
+
+                  
+                </form>
+                </div>
                 @if (session('success'))
                     <div class="alert alert-success">
                         <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)">      
@@ -38,7 +64,7 @@
                 </thead>
                 <tbody>
                     @foreach ($nums2s as $nums2s)
-                    <li v-for="personne in personnes | filterBy 'actif'">
+                    
    
   
                         <tr class="tborder">
@@ -63,7 +89,7 @@
                                 @include('includes.delete2')
                             </td>
                         </tr>
-                        </li>
+                       
                     @endforeach
 
                 </tbody>

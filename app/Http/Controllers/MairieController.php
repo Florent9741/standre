@@ -43,6 +43,21 @@ class MairieController extends Controller
     {
         $nums = Nums::All();
         $nums2s = Nums2s::All();
+        $gpinters = Gpinter::All();
+   
+        return view('dashboard', [
+            'nums' => $nums,
+            'nums2s' => $nums2s,
+            'gpinters' => $gpinters
+            
+        ]);
+    }
+//-------------------------------------Trieur dashboard-----------------------------------//
+    public function ascendent3()
+    {
+        $nums = Nums::Orderby('Nom','asc')->get();
+        $nums2s = Nums2s::Orderby('Nom','asc')->get();
+       
    
         return view('dashboard', [
             'nums' => $nums,
@@ -50,11 +65,22 @@ class MairieController extends Controller
             
         ]);
     }
-
-
+    public function desc3()
+    {
+        $nums = Nums::Orderby('Nom','desc')->get();
+        $nums2s = Nums2s::Orderby('Nom','desc')->get();
+       
+   
+        return view('dashboard', [
+            'nums' => $nums,
+            'nums2s' => $nums2s,
+            
+        ]);
+    }
+//----------------------------------------------------------------------------//
     public function crud()
     {
-        $nums = Nums::All();  
+        $nums = Nums::All(); 
         
         return view('backend', [
             'nums' => $nums,
@@ -65,7 +91,7 @@ class MairieController extends Controller
     
     public function crud2()
     {
-        $nums2s = Nums2s::All();
+        $nums2s = Nums2s::all();
        
    
         return view('backend2', [
@@ -84,6 +110,56 @@ class MairieController extends Controller
             
         ]);
     }
+
+//----------------------- trieur pour le mobile--------------------//
+
+    public function ascendent()
+    {
+        $nums2s = Nums2s::Orderby('Nom','asc')->get();
+       
+   
+        return view('backend2', [
+            'nums2s' => $nums2s,
+            
+        ]);
+    }
+    public function desc()
+    {
+        $nums2s = Nums2s::Orderby('Nom','desc')->get();
+       
+   
+        return view('backend2', [
+            'nums2s' => $nums2s,
+            
+        ]);
+    }
+//---------------------------------------------------------------------//
+
+
+//-----------------------Trieur Fixe-----------------------------------//
+    public function ascendent2()
+    {
+        $nums = Nums::Orderby('Nom','asc')->get();
+       
+   
+        return view('backend', [
+            'nums' => $nums,
+            
+        ]);
+    }
+    public function desc2()
+    {
+        $nums = Nums::Orderby('Nom','desc')->get();
+       
+   
+        return view('backend', [
+            'nums' => $nums,
+            
+        ]);
+    }
+    //-----------------------------------------------------------------------------------//
+
+
 
     public function create(Request $request)
     {

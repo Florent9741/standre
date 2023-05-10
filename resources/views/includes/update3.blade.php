@@ -1,7 +1,6 @@
 <div x-data="{ modelOpen: false }">
-    <button @click="modelOpen =!modelOpen"
-        class="flex items-center justify-center px-6 py-3 my-3 space-x-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-blue-700 focus:outline-none focus:bg-green-500 focus:ring focus:ring-green-300 focus:ring-opacity-50">
-        <span>Ajouter Un Numéro</span>
+    <button @click="modelOpen =!modelOpen">
+        <i class="p-3 fa-solid fa-pen-to-square hover:text-blue-700"></i>
     </button>
 
     <div x-cloak x-show="modelOpen" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title"
@@ -21,41 +20,43 @@
                 x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 class="inline-block w-full max-w-xl p-8 my-20 overflow-hidden text-left transition-all transform bg-white rounded-lg shadow-xl 2xl:max-w-2xl">
                 <div class="flex items-center justify-center space-x-4">
-                    <h1 class="text-4xl font-medium text-gray-800">Ajouter un nouveau numéro</h1>
+                    <h1 class="text-4xl font-medium text-gray-800">Modifier un numéro</h1>
 
                     <button @click="modelOpen = false" class="text-gray-600 focus:outline-none hover:text-gray-700">
                     </button>
                 </div>
 
-                <form class="mt-5" method="post" action="{{ route('ajouter3') }}"
+                <form class="mt-5" method="post" action="{{ route('update3', $gpinters['id']) }}"
                     enctype="multipart/form-data">
                     @csrf
-        
+                     <div>
+                        <div class="flex pb-2">
+                            <div class="w-2/3">
+                            <label for="Nom"
+                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Nom</label>
+                            <input type="text" name="Nom" value="{{$gpinters->numero}}"
+                                class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
+                                required>
+                            </div>
+                            
+                        </div>
 
 
                         <div>
                             <label for="ninterne"
                                 class="block text-sm text-gray-700 capitalize dark:text-gray-600">N° Interne</label>
-                            <input type="text" name="ninterne" placeholder="ninterne"
+                            <input type="text" name="ninterne" value="{{$gpinters->service}}"
                                 class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
                                 required>
                         </div>
 
-                        <div class="mt-4">
-                        <label for="nexterne"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">N° Externe</label>
-                            <input type="text" name="nexterne" placeholder="nexterne"
-                                class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
-                                required>
-                        </div>
-
-                      
+                       
                         <button type="submit"
-                                class="flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-red-600 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-red-300 focus:ring-opacity-50">
+                                class="flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-700 rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-50">
                                 Valider
                             </button>
+                            </div>
 
-                  
                 </form>
             </div>
         </div>

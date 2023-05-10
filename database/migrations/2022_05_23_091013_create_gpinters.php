@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('gpinters', function (Blueprint $table) {
             $table->id('id');
-            $table->string('numero',100);
-            $table->string('service',100);
+            $table->string('numero',100)->nullable();
+            $table->string('service',100)->nullable();
           
             $table->timestamps();
             $table->softDeletes();

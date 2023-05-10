@@ -5,7 +5,32 @@
             <h1 class="pb-4 mb-2 text-3xl font-medium sm:text-4xl title-font">Liste des Fixe</h1>
 
             <table class="object-center whitespace-no-wrap bg-gray-100 table-auto">
-                
+            <div class="flex space-x-2">
+            <form class="mt-5" method="post" action="{{ route('ascendent2') }}"
+                    enctype="multipart/form-data">
+                    @csrf
+                   
+
+                        <button type="submit"
+                                class=" w-[10%] bg-black flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm text-white rounded-md ">
+                                A-Z
+                            </button>
+
+                  
+                </form>
+                <form class="mt-5" method="post" action="{{ route('desc2') }}"
+                    enctype="multipart/form-data">
+                    @csrf
+                   
+
+                        <button type="submit"
+                                class=" w-[10%] bg-black flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm text-white rounded-md ">
+                                Z-A
+                            </button>
+
+                  
+                </form>
+                </div>
                 @if (session('success'))
                     <div class="alert alert-success">
                         <div x-data="{ show: true }" x-show="show" x-init="setTimeout(() => show = false, 3000)">      
