@@ -23,6 +23,8 @@
                       href="{{ route('backend') }}">Fixe</a>
                       <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('backend2') }}">Mobile</a>
+                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
+                      href="{{ route('backend3') }}">Gp Interception</a>
                    <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('doctel') }}">Doc téléphone fixe</a>
                       @auth <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"

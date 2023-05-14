@@ -32,9 +32,9 @@
                      <div>
                         <div class="flex pb-2">
                             <div class="w-2/3">
-                            <label for="Nom"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Nom</label>
-                            <input type="text" name="Nom" value="{{$gpinters->numero}}"
+                            <label for="numero"
+                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">numero</label>
+                            <input type="text" name="numero" value="{{$gpinters->numero}}"
                                 class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
                                 required>
                             </div>
@@ -43,9 +43,9 @@
 
 
                         <div>
-                            <label for="ninterne"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">N° Interne</label>
-                            <input type="text" name="ninterne" value="{{$gpinters->service}}"
+                            <label for="service"
+                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">service</label>
+                            <input type="text" name="service" value="{{$gpinters->service}}"
                                 class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
                                 required>
                         </div>
