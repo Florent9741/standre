@@ -9,6 +9,10 @@ use Throwable;
 
 class MairieController extends Controller
 {
+
+    public function toto(){
+        return view('includes.toto');
+    }
     public function alcatel1(){
         return view('includes.alcatel1');
     }

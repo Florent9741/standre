@@ -23,6 +23,7 @@ Route::get('arrivant', [MairieController::class, 'arrivant'])->name('arrivant');
 Route::get('doctel', [MairieController::class, 'doctel'])->name('doctel');
 Route::get('alcatel1', [MairieController::class, 'alcatel1'])->name('alcatel1');
 Route::get('alcatel2', [MairieController::class, 'alcatel2'])->name('alcatel2');
+Route::get('toto', [MairieController::class, 'toto'])->name('toto');
 
 Route::get('register', [Authcontroller::class, 'register'])->name('register');
 
