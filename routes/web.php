@@ -16,7 +16,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MairieController::class, 'index'])->name('welcome');
-
+Route::post('ascendent', [MairieController::class, 'ascendent'])->name('ascendent');   
+Route::post('desc', [MairieController::class, 'desc'])->name('desc');    
+Route::post('ascendent2', [MairieController::class, 'ascendent2'])->name('ascendent2');   
+Route::post('desc2', [MairieController::class, 'desc2'])->name('desc2');
+Route::post('ascendent3', [MairieController::class, 'ascendent3'])->name('ascendent3');   
+Route::post('desc3', [MairieController::class, 'desc3'])->name('desc3');
+Route::post('ascendent4', [MairieController::class, 'ascendent4'])->name('ascendent4');   
+Route::post('desc4', [MairieController::class, 'desc4'])->name('desc4');
 Route::get('lien', [MairieController::class, 'lien'])->name('lien');                
 Route::get('lienwit', [MairieController::class, 'lienwit'])->name('lienwit');
 Route::get('arrivant', [MairieController::class, 'arrivant'])->name('arrivant');
@@ -53,6 +60,7 @@ Route::middleware(['Admin'])->group(function () {
 
 Route::get('/backend', [MairieController::class, 'crud'])->name('backend');
 Route::get('/backend2', [MairieController::class, 'crud2'])->name('backend2');
+Route::get('/backend3', [MairieController::class, 'crud3'])->name('backend3');
 
 Route::post('/Mairie/ajouter', [MairieController::class, 'create'])->name('ajouter');
 
@@ -65,3 +73,10 @@ Route::post('/Mairie/ajouter2', [MairieController::class, 'createnums2'])->name(
 Route::post('/Mairie/update2/{id}', [MairieController::class, 'updatenums2'])->whereNumber('id')->name('update2');
 
 Route::delete('/Mairie/delete2/{id}', [MairieController::class, 'deletenums2'])->whereNumber('id')->name('delete2');
+
+
+Route::post('/Mairie/ajouter3', [MairieController::class, 'creategpinter'])->name('ajouter3');
+
+Route::post('/Mairie/update3/{id}', [MairieController::class, 'updategpinter'])->whereNumber('id')->name('update3');
+
+Route::delete('/Mairie/delete2/{id}', [MairieController::class, 'deletegpinter'])->whereNumber('id')->name('delete2');

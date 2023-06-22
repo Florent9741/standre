@@ -34,7 +34,7 @@ class Authcontroller extends Controller
         $membre->email = $validate['email'];
         $membre->password = Hash::make($validate['password']);
         $membre->save();
-        return redirect()->route('login')->with('status','Registration succes.Please Login!');
+        return redirect()->route('login')->with('status','Votre compte à été créer, Connectez-vous!');
     }
     public function login()
     {
@@ -57,7 +57,7 @@ class Authcontroller extends Controller
             session(['user' => $membre]);
             return redirect()->intended(route('welcome'));
             }
-       return redirect()->route('login')->with('Echec','Wrong username or password!');
+       return redirect()->route('login')->with('Echec','email ou mot de passe invalide');
     }
     public function logout(Request $request)
 {

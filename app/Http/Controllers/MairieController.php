@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Nums2s;
 use App\Models\Nums;
+use App\Models\Gpinter;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 use Throwable;
@@ -46,6 +47,21 @@ class MairieController extends Controller
     {
         $nums = Nums::All();
         $nums2s = Nums2s::All();
+        $gpinters = Gpinter::All();
+   
+        return view('dashboard', [
+            'nums' => $nums,
+            'nums2s' => $nums2s,
+            'gpinters' => $gpinters
+            
+        ]);
+    }
+//-------------------------------------Trieur dashboard-----------------------------------//
+    public function ascendent3()
+    {
+        $nums = Nums::Orderby('Nom','asc')->get();
+        $nums2s = Nums2s::Orderby('Nom','asc')->get();
+       
    
         return view('dashboard', [
             'nums' => $nums,
@@ -53,11 +69,22 @@ class MairieController extends Controller
             
         ]);
     }
-
-
+    public function desc3()
+    {
+        $nums = Nums::Orderby('Nom','desc')->get();
+        $nums2s = Nums2s::Orderby('Nom','desc')->get();
+       
+   
+        return view('dashboard', [
+            'nums' => $nums,
+            'nums2s' => $nums2s,
+            
+        ]);
+    }
+//----------------------------------------------------------------------------//
     public function crud()
     {
-        $nums = Nums::All();  
+        $nums = Nums::All(); 
         
         return view('backend', [
             'nums' => $nums,
@@ -68,7 +95,7 @@ class MairieController extends Controller
     
     public function crud2()
     {
-        $nums2s = Nums2s::All();
+        $nums2s = Nums2s::all();
        
    
         return view('backend2', [
@@ -76,6 +103,90 @@ class MairieController extends Controller
             
         ]);
     }
+
+    public function crud3()
+    {
+        $gpinters = Gpinter::All();
+       
+   
+        return view('backend3', [
+            'gpinters' => $gpinters,
+            
+        ]);
+    }
+
+//----------------------- trieur pour le mobile--------------------//
+
+    public function ascendent()
+    {
+        $nums2s = Nums2s::Orderby('Nom','asc')->get();
+       
+   
+        return view('backend2', [
+            'nums2s' => $nums2s,
+            
+        ]);
+    }
+    public function desc()
+    {
+        $nums2s = Nums2s::Orderby('Nom','desc')->get();
+       
+   
+        return view('backend2', [
+            'nums2s' => $nums2s,
+            
+        ]);
+    }
+//---------------------------------------------------------------------//
+
+
+//-----------------------Trieur Fixe-----------------------------------//
+    public function ascendent2()
+    {
+        $nums = Nums::Orderby('Nom','asc')->get();
+       
+   
+        return view('backend', [
+            'nums' => $nums,
+            
+        ]);
+    }
+    public function desc2()
+    {
+        $nums = Nums::Orderby('Nom','desc')->get();
+       
+   
+        return view('backend', [
+            'nums' => $nums,
+            
+        ]);
+    }
+    //-----------------------------------------------------------------------------------//
+
+    //-----------------------Trieur Gp interception-----------------------------------//
+    public function ascendent4()
+    {
+        $gpinters = Gpinter::Orderby('numero','asc')->get();
+       
+   
+        return view('backend3', [
+            'gpinters' => $gpinters,
+            
+        ]);
+    }
+    public function desc4()
+    {
+        $gpinters = Gpinter::Orderby('numero','desc')->get();
+       
+   
+        return view('backend3', [
+            'gpinters' => $gpinters,
+            
+        ]);
+    }
+    //-----------------------------------------------------------------------------------//
+
+
 
     public function create(Request $request)
     {
@@ -90,7 +201,7 @@ class MairieController extends Controller
        
         $nums->save();
        
-        return redirect()->route('backend')->with('success', 'Numéro ajouté');
+        return redirect()->route('dashboard')->with('success', 'Numéro ajouté');
     }
 
 
@@ -106,7 +217,7 @@ class MairieController extends Controller
        
         $nums->save();
        
-        return redirect()->route('backend')->with('modifié', 'Numéro modifié');
+        return redirect()->route('dashboard')->with('modifié', 'Numéro modifié');
 
     }
 
@@ -115,7 +226,7 @@ class MairieController extends Controller
     {
         $nums = Nums::where('id', '=', $id);
         $nums->delete();
-        return redirect()->route('backend')->with('deleted', 'Numéro supprimé');
+        return redirect()->route('dashboard')->with('deleted', 'Numéro supprimé');
     }
 
 //---------------------------------- NUMS2-------------------------------------//
@@ -132,7 +243,7 @@ public function createnums2(Request $request)
        
         $nums2s->save();
        
-        return redirect()->route('backend2')->with('success', 'Numéro ajouté');
+        return redirect()->route('dashboard')->with('success', 'Numéro ajouté');
     }
 
 
@@ -148,7 +259,7 @@ public function createnums2(Request $request)
        
         $nums2s->save();
        
-        return redirect()->route('backend2')->with('modifié', 'Numéro modifié');
+        return redirect()->route('dashboard')->with('modifié', 'Numéro modifié');
 
     }
 
@@ -157,9 +268,45 @@ public function createnums2(Request $request)
     {
         $nums2s = Nums2s::where('id', '=', $id);
         $nums2s->delete();
-        return redirect()->route('backend2')->with('deleted', 'Numéro supprimé');
+        return redirect()->route('dashboard')->with('deleted', 'Numéro supprimé');
     }
 
 //---------------------------------------------------------------------------------------------------------------------//
 
+public function creategpinter(Request $request)
+    {
+//dd($request);
+          //chemin + nom image
+        $gpinters = new Gpinter();
+        
+        $gpinters->numero = $request->numero;
+        $gpinters->service = $request->service;
+      
+       
+        $gpinters->save();
+       
+        return redirect()->route('dashboard')->with('success', 'Numéro ajouté');
+    }
+
+
+
+    public function updategpinter(Request $request, $id)
+    {
+        $gpinters = Gpinter::find($id);
+        $gpinters->numero = $request->numero;
+        $gpinters->service = $request->service;
+       
+        $gpinters->save();
+       
+        return redirect()->route('dashboard')->with('modifié', 'Numéro modifié');
+
+    }
+
+
+    public function deletegpinter($id)
+    {
+        $gpinters = Gpinter::where('id', '=', $id);
+        $gpinters->delete();
+        return redirect()->route('dashboard')->with('deleted', 'Numéro supprimé');
+    }
 }

@@ -27,56 +27,31 @@
                     </button>
                 </div>
 
-                <form class="mt-5" method="post" action="{{ route('ajouter') }}"
+                <form class="mt-5" method="post" action="{{ route('ajouter3') }}"
                     enctype="multipart/form-data">
                     @csrf
-                    <div>
-                        <div class="flex pb-2">
-                            <div class="w-2/3">
-                            <label for="Nom"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Nom</label>
-                            <input type="text" name="Nom" placeholder="Nom"
-                                class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
-                                required>
-                            </div>
-                            
-                        </div>
+        
 
 
                         <div>
-                            <label for="ninterne"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">N° Interne</label>
-                            <input type="text" name="ninterne" placeholder="ninterne"
+                            <label for="numero"
+                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">numero</label>
+                            <input type="text" name="numero" placeholder="numero"
                                 class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
                                 required>
                         </div>
 
                         <div class="mt-4">
-                        <label for="nexterne"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">N° Externe</label>
-                            <input type="text" name="nexterne" placeholder="nexterne"
+                        <label for="service"
+                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">service</label>
+                            <input type="text" name="service" placeholder="servide"
                                 class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
                                 required>
                         </div>
 
-                        <div class="mt-4">
-                        <label for="gpinterc"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Gp Interc</label>
-                            <input type="text" name="gpinterc" placeholder="gpinterc"
-                                class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
-                                required>
-                        </div>
-
-                        <div class="mt-4">
-                        <label for="gpdiff"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Gp Diffusion</label>
-                            <input type="text" name="gpdiff" placeholder="gpdiff"
-                                class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
-                                required>
-                        </div>
-
+                      
                         <button type="submit"
-                                class="flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-50">
+                                class="flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-blue-700 rounded-md hover:bg-red-600 focus:outline-none focus:bg-blue-500 focus:ring focus:ring-red-300 focus:ring-opacity-50">
                                 Valider
                             </button>
 

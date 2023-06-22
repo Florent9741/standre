@@ -15,19 +15,20 @@
           <div class="items-center md:flex">
               <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
                   <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
-                      href="{{ route('welcome') }}">Home</a>
+                      href="{{ route('welcome') }}">Accueil</a>
                   <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('lien')}}">Lien</a>
-                      <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
-                      href="{{ route('lienwit')}}">Lienwit</a>
+                      
                       <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('backend') }}">Fixe</a>
                       <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('backend2') }}">Mobile</a>
-                  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
-                      href="{{ route('user') }}">utilisateurs</a>
                       <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
-                      href="{{ route('arrivant') }}">Nouvel Arrivant</a>
+                      href="{{ route('backend3') }}">Gp Interception</a>
+                   <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
+                      href="{{ route('doctel') }}">Doc téléphone fixe</a>
+                      @auth <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
+                      href="{{ route('user') }}">Utilisateurs</a>@endauth
                 @auth  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('dashboard') }}">Dashboard</a> @endauth
                  @auth  <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
