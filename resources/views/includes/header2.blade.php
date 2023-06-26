@@ -20,9 +20,9 @@
                       href="{{ route('lien')}}">Liens</a>
                       
                       <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
-                      href="{{ route('backend') }}">Fixe</a>
+                      href="{{ route('backend') }}">Fixes</a>
                       <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
-                      href="{{ route('backend2') }}">Mobile</a>
+                      href="{{ route('backend2') }}">Mobiles</a>
                       <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('backend3') }}">Gp Interception</a>
                    <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"

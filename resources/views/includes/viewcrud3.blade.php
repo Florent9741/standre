@@ -53,8 +53,8 @@
                         class="px-4 py-3 text-sm font-medium tracking-wider text-white rounded-b title-font bg-black">
                        
                  
-                        <th class="px-5 py-3 border-2 ">N° Interne</th>
-                        <th class="px-5 py-3 border-2 ">N° Externe</th>
+                        <th class="px-5 py-3 border-2 ">Numéro</th>
+                        <th class="px-5 py-3 border-2 ">Service</th>
                         
               
                         

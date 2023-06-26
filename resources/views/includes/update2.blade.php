@@ -44,7 +44,7 @@
 
                         <div>
                             <label for="ninterne"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">N° Interne</label>
+                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Numéro</label>
                             <input type="text" name="ninterne" value="{{$nums2s->ninterne}}"
                                 class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
                                 required>
@@ -52,27 +52,13 @@
 
                         <div class="mt-4">
                         <label for="nexterne"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">N° Externe</label>
+                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Formule</label>
                             <input type="text" name="nexterne" value="{{$nums2s->nexterne}}"
                                 class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
                                 required>
                         </div>
 
-                        <div class="mt-4">
-                        <label for="gpinterc"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Gp Interc</label>
-                            <input type="text" name="gpinterc" value="{{$nums2s->gpinterc}}"
-                                class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
-                                required>
-                        </div>
-
-                        <div class="mt-4">
-                        <label for="gpdiff"
-                                class="block text-sm text-gray-700 capitalize dark:text-gray-600">Gp Diffusion</label>
-                            <input type="text" name="gpdiff" value="{{$nums2s->gpdiff}}"
-                                class="block w-full px-3 py-2 mt-2 text-gray-600 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-red-400 focus:outline-none focus:ring focus:ring-red-300 focus:ring-opacity-40"
-                                required>
-                        </div>
+                        
 
                         <button type="submit"
                                 class="flex items-center justify-center h-10 px-6 py-3 mt-4 space-x-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-700 rounded-md hover:bg-red-600 focus:outline-none focus:bg-red-500 focus:ring focus:ring-red-300 focus:ring-opacity-50">

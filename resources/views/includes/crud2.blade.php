@@ -54,11 +54,9 @@
                         class="px-4 py-3 text-sm font-medium tracking-wider text-white rounded-b title-font bg-black">
                         <th class="px-5 py-3 border-2 ">Nom</th>
                  
-                        <th class="px-5 py-3 border-2 ">N° Interne</th>
-                        <th class="px-5 py-3 border-2 ">N° Externe</th>
-                        <th class="px-5 py-3 border-2 ">Gp Interc</th>
-                        <th class="px-5 py-3 border-2 ">Gp Diffusion</th>
-              
+                        <th class="px-5 py-3 border-2 ">Numéro</th>
+                        <th class="px-5 py-3 border-2 ">Formule</th>
+                     
                         <th class="px-5 py-3 border-2 ">Modifier</th>
                     </tr>
                 </thead>
@@ -77,11 +75,7 @@
                                     <td class="px-4 py-3 border-2 ">{{ $nums2s->nexterne }}
                                    </td>
                                    
-                                   <td class="px-4 py-3 border-2 ">{{ $nums2s->gpinterc }}
-                                   </td>
-                                   
-                                   <td class="px-4 py-3 border-2 ">{{ $nums2s->gpdiff }}
-                                   </td>
+                          
                           
                           
                            

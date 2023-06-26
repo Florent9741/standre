@@ -554,6 +554,13 @@ video {
   }
 }
 
+@media (min-width: 1629px) {
+
+  .container {
+    max-width: 1629px;
+  }
+}
+
 @media (min-width: 1920px) {
 
   .container {

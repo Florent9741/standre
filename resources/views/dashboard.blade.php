@@ -2,9 +2,12 @@
 
 @section('main')
 
- @include('includes.crud')
- @include('includes.crud2')
- @include('includes.crud3')
+@include('includes.crud')
+@include('includes.crud2')
+@include('includes.crud3')
+
+ 
+ 
  
  
 @endsection
