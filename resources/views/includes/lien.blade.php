@@ -34,7 +34,7 @@
       class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed "
       style="background-color: rgba(0, 0, 0, 0.75)">
       <div class="flex h-full items-center justify-center">
-        <div class="px-6 text-center text-white md:px-12">
+        <div class="px-4 text-center text-white md:px-12">
       
           <h3 class="mb-8 text-3xl text-white py-10 ">Informatique</h3>
           
@@ -52,14 +52,10 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     </head>
     <body>
-        <div class="flex flex-col justify-center items-center h-[80vh]">
+        <div class="flex flex-col justify-center items-center ">
             <div class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-2 3xl:p-![18px] bg-white undefined">
                  
-            <div class="relative flex flex-row justify-center ">
-                <h4 class="text-xl font-bold text-navy-700 dark:text-white">
-                    Informatique
-                </h4>
-            </div>
+         
  
             <div class="h-full w-full mt-5 flex flex-col"> 
             <button class="rounded-xl border-2 border-red-500 px-5 py-3 text-base mb-3 font-medium text-black-500 transition duration-200 hover:bg-red-600/5 active:bg-red-700/5">
@@ -78,9 +74,7 @@
                     <a href="https://www.nperf.com/fr/" >Test de la connexion internet</a>
                 </button>
                
-                <button class="rounded-xl border-2 border-red-500 px-5 py-3 text-base mb-3 font-medium text-black-500 transition duration-200 hover:bg-red-600/5 active:bg-red-700/5">
-                    <a href="https://sites.google.com/ville-saint-andre.fr/informatique/signature" >Signature Mairie HTML</a>
-                </button>
+              
             </div>
             </div>
            
@@ -96,7 +90,7 @@
       class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed "
       style="background-color: rgba(0, 0, 0, 0.75)">
       <div class="flex h-full items-center justify-center">
-        <div class="px-6 text-center text-white md:px-12">
+        <div class="px-4 text-center text-white md:px-12">
       
           <h3 class="mb-8 text-3xl text-white py-10 ">Métier</h3>
           
@@ -106,14 +100,10 @@
   </div>
 
 
-        <div class="flex flex-col justify-center items-center h-[80vh]">
+        <div class="flex flex-col justify-center items-center ">
             <div class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-6 3xl:p-![18px] bg-white undefined">
                  
-            <div class="relative flex flex-row justify-center ">
-                <h4 class="text-xl font-bold text-navy-700 dark:text-white">
-                    Métier
-                </h4>
-            </div>
+        
  
             <div class="h-full w-full mt-5 flex flex-col"> 
             <button class="rounded-xl border-2 border-red-500 px-5 py-3 text-base mb-3 font-medium text-black-500 transition duration-200 hover:bg-red-600/5 active:bg-red-700/5">
@@ -150,7 +140,7 @@
       class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed "
       style="background-color: rgba(0, 0, 0, 0.75)">
       <div class="flex h-full items-center justify-center">
-        <div class="px-6 text-center text-white md:px-12">
+        <div class="px-4 text-center text-white md:px-12">
       
           <h3 class="mb-8 text-3xl text-white py-10 ">Administratif</h3>
           
@@ -160,18 +150,14 @@
   </div>
 
 
-        <div class="flex flex-col justify-center items-center h-[80vh]">
+        <div class="flex flex-col justify-center items-center ">
             <div class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-6 3xl:p-![18px] bg-white undefined">
                  
-            <div class="relative flex flex-row justify-center ">
-                <h4 class="text-xl font-bold text-navy-700 dark:text-white">
-                   Administratif
-                </h4>
-            </div>
+            <p class="text-sm text-center text-red-500"> Documents non gérés par l'informatique</p>
  
             <div class="h-full w-full mt-5 flex flex-col"> 
             <button class="rounded-xl border-2 border-red-500 px-5 py-3 text-base mb-3 font-medium text-black-500 transition duration-200 hover:bg-red-600/5 active:bg-red-700/5">
-            <p class="text-xs text-red-500"> documents non géré par l'informatique</p>
+           
             <a href="https://docs.google.com/spreadsheets/d/1iQVdlwUD4EejLGSvxfjF3amwNVljZCk-2H9K3jDH944/edit?usp=sharing" >Planning d'emprunt de la Zoé 
 
 </a>

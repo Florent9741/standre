@@ -17,7 +17,7 @@
                   <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('welcome') }}">Accueil</a>
                   <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
-                      href="{{ route('lien')}}">Lien</a>
+                      href="{{ route('lien')}}">Liens</a>
                       
                       <a class="my-1 text-sm leading-5 text-white transition-colors duration-200 transform hover:text-green-700 hover:underline md:mx-4 md:my-0"
                       href="{{ route('backend') }}">Fixe</a>
