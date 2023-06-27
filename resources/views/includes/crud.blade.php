@@ -1,5 +1,5 @@
 @vite(['resources/css/app.css', 'resources/js/app.js'])
-<section class="mt-6 px-12 text-black bg-gray-200 rounded-lg body-font">
+<section class="mt-6 px-12 text-black bg-white rounded-lg body-font">
     <div class="container px-5 py-10 mx-auto ">
         <div class="flex flex-col w-full mb-20 text-center ">
             <h1 class="pb-4 mb-2 text-3xl font-medium sm:text-4xl title-font">Liste des fixes</h1>
