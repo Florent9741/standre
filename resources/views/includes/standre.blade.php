@@ -10,7 +10,7 @@
       style="background-color: rgba(0, 0, 0, 0.75)">
       <div class="flex h-full items-center justify-center">
         <div class="px-6 text-center text-white md:px-12">
-        <img class="h-[170px] py-1 w-full pt-1 rounded-md"
+        <img class="h-[170px] py-1 w-full mt-4 pt-1 rounded-md"
                           src="{{ Storage::url('./img/logo1.png') }}">
           <h3 class="mb-8 text-3xl text-white py-10 ">Mairie de Saint-André-lez-Lille</h3>
           

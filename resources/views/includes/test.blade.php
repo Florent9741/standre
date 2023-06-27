@@ -116,20 +116,12 @@
   }
 
 </style>
-<div x-data="setup()" :class="{ 'dark': isDark }">
-    <div class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white py-6">
 
-      <!-- Header -->
-      
-      <!-- ./Header -->
     
-      <!-- Sidebar -->
-      
-    
-      <div class="h-full ml-14 mt-14 mb-10 md:ml-64">
+      <div class="h-full flex flex-col justify-center ml-14 mt-14 mb-10 md:ml-64">
     
         <!-- Statistics Cards -->
-        <p class="mb-1 hidden md:block text-xl">Réseau Mairie - Situation actuelle</p>
+        <p class="mb-1 hidden px-8 text-center md:block text-xl">Réseau Mairie - Situation actuelle</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 p-4 gap-4">
           <div class="bg-green-800 dark:bg-gray-800 shadow-lg rounded-md flex items-center justify-between p-3 border-b-4 border-blue-600 dark:border-gray-600 text-white font-medium group">
             <div class="flex justify-center items-center w-14 h-14 bg-white rounded-full transition-all duration-300 transform group-hover:rotate-12">
@@ -159,6 +151,7 @@
             </div>
           </div>
          
+        </div>
         </div>
         <!-- ./Statistics Cards -->
        

@@ -32,7 +32,7 @@
       <div class="flex h-full items-center justify-center">
         <div class="px-6 text-center text-white md:px-12">
       
-          <h3 class="mb-8 text-3xl text-white py-10 ">Selectionner votre téléphone</h3>
+          <h3 class="mb-8 text-3xl text-white py-10 ">Selectionnez votre téléphone</h3>
           
         </div>
       </div>
